@@ -1,0 +1,37 @@
+---
+description: Core project context for HR Policy RAG — read AGENTS.md and IMPLEMENTATION.md
+alwaysApply: true
+---
+
+# HR Policy RAG — Agent Rules
+
+## Before Writing Code
+
+1. Read `AGENTS.md` and `docs/SESSION_LOG.md`
+2. Find the first unchecked item in `docs/IMPLEMENTATION.md`
+3. Implement only that scope — do not skip phases
+4. Respect accepted ADRs in `docs/adr/` — do not contradict without new ADR
+
+## Conventions
+
+- Python 3.11+, type hints on public functions
+- Core RAG logic lives in `rag/` (not in `apps/`)
+- Pydantic for schemas and config
+- Structured JSON logging — no bare print in production code
+- Citations required in all generated answers
+- Synthetic data only — no scraping proprietary HR PDFs
+
+## Session Handoff
+
+After completing work:
+- Check off items in `docs/IMPLEMENTATION.md`
+- Append to `docs/SESSION_LOG.md`
+- Update status table in `AGENTS.md`
+
+## Key Paths
+
+- Checklist: `docs/IMPLEMENTATION.md`
+- Design: `docs/architecture/`
+- Decisions: `docs/adr/`
+- Data schemas: `data/schemas/`
+- Generation scripts: `scripts/data_generation/`

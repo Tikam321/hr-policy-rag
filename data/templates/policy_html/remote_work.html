@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Purpose and Eligibility", sections.purpose_and_eligibility) }}
+{{ section(2, "Remote Schedule", sections.remote_schedule) }}
+{{ section(3, "Equipment and Workspace", sections.equipment_workspace) }}
+{{ section(4, "Communication and Performance", sections.communication_performance) }}
+{{ section(5, "Security and Compliance", sections.security_compliance) }}
+{% endblock %}

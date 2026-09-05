@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Policy Scope", sections.policy_scope) }}
+{{ section(2, "Eligible Expenses", sections.eligible_expenses) }}
+{{ section(3, "Receipts and Submission", sections.receipts_submission) }}
+{{ section(4, "Approval Limits", sections.approval_limits) }}
+{{ section(5, "Audit and Non-Compliance", sections.audit_compliance) }}
+{% endblock %}

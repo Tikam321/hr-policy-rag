@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hr-policy-rag.local/schemas/policy.schema.json",
+  "title": "Policy Document Metadata",
+  "description": "Metadata for a generated or ingested HR policy PDF, including ground-truth parameters for eval.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "doc_id",
+    "company_id",
+    "policy_type",
+    "title",
+    "version",
+    "effective_date",
+    "status",
+    "file_path",
+    "parameters"
+  ],
+  "properties": {
+    "doc_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Unique document identifier, typically {company_id}-{policy_type}-{version}.",
+      "examples": ["novatech-solutions-leave-policy-2024"]
+    },
+    "company_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Foreign key to company profile."
+    },
+    "policy_type": {
+      "type": "string",
+      "enum": [
+        "leave_policy",
+        "remote_work",
+        "code_of_conduct",
+        "benefits",
+        "expense",
+        "performance",
+        "onboarding",
+        "termination",
+        "data_security",
+        "travel"
+      ],
+      "description": "Policy category slug — one of ten standard HR policy types."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display title shown in PDF header and citations.",
+      "examples": ["Leave Policy"]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2})?$",
+      "description": "Policy version label, e.g. 2024 or 2024-01.",
+      "examples": ["2024-01"]
+    },
+    "effective_date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date when this policy version becomes effective."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "archived"],
+      "description": "active = current policy; archived = superseded but retained for version tests."
+    },
+    "file_path": {
+      "type": "string",
+      "description": "Relative path to the PDF from repository root.",
+      "examples": ["data/documents/novatech-solutions/leave_policy_2024.pdf"]
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Ground-truth policy parameters used for generation and golden eval Q&A.",
+      "minProperties": 1,
+      "additionalProperties": {
+        "oneOf": [
+          { "type": "string" },
+          { "type": "integer" },
+          { "type": "boolean" },
+          { "type": "array", "items": { "type": "string" } }
+        ]
+      },
+      "properties": {
+        "annual_leave_days": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "leave_policy — paid annual leave days for full-time staff."
+        },
+        "probation_months": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "leave_policy, performance — probation period length in months."
+        },
+        "carry_forward_limit": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "leave_policy — max leave days carried to next year."
+        },
+        "remote_days_per_week": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "remote_work — allowed WFH days per week."
+        },
+        "health_insurance_coverage_pct": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "benefits — employer share of health premium."
+        },
+        "expense_reimbursement_days": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "expense — SLA days to reimburse approved expenses."
+        }
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Optional timestamp when synthetic document was generated."
+    }
+  }
+}

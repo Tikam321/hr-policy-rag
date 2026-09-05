@@ -1,0 +1,403 @@
+{
+  "description": "Section outlines for LLM generation — one entry per policy type. Used with prompts/generate_section.j2.",
+  "leave_policy": {
+    "title": "Leave & Time Off Policy",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Purpose and Scope",
+        "key": "purpose_and_scope",
+        "parameter_keys": [],
+        "instructions": "Explain who the policy applies to (full-time, part-time, contractors where relevant) and the company commitment to work-life balance."
+      },
+      {
+        "number": 2,
+        "title": "Annual Leave Entitlement",
+        "key": "annual_leave_entitlement",
+        "parameter_keys": ["annual_leave_days", "probation_months"],
+        "instructions": "State the annual leave days for full-time employees and how probation affects entitlement accrual or usage."
+      },
+      {
+        "number": 3,
+        "title": "Sick Leave",
+        "key": "sick_leave",
+        "parameter_keys": ["sick_leave_days"],
+        "instructions": "Describe sick leave allocation, notification requirements, and medical certificate rules if applicable."
+      },
+      {
+        "number": 4,
+        "title": "Carry Forward and Year-End",
+        "key": "carry_forward",
+        "parameter_keys": ["carry_forward_limit"],
+        "instructions": "Explain carry-forward limits, year-end forfeiture rules, and manager approval for exceptions."
+      },
+      {
+        "number": 5,
+        "title": "Request and Approval Process",
+        "key": "request_process",
+        "parameter_keys": [],
+        "instructions": "Describe how employees request leave, minimum notice periods, and manager/HR approval workflow."
+      }
+    ]
+  },
+  "remote_work": {
+    "title": "Remote Work Policy",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Purpose and Eligibility",
+        "key": "purpose_and_eligibility",
+        "parameter_keys": [],
+        "instructions": "Define remote work purpose, eligible roles, and hybrid expectations."
+      },
+      {
+        "number": 2,
+        "title": "Remote Schedule",
+        "key": "remote_schedule",
+        "parameter_keys": ["remote_days_per_week", "core_hours_start", "core_hours_end"],
+        "instructions": "State allowed WFH days per week and core collaboration hours employees must be available."
+      },
+      {
+        "number": 3,
+        "title": "Equipment and Workspace",
+        "key": "equipment_workspace",
+        "parameter_keys": ["equipment_allowance_usd"],
+        "instructions": "Cover home office equipment allowance, ergonomic responsibilities, and company-provided hardware."
+      },
+      {
+        "number": 4,
+        "title": "Communication and Performance",
+        "key": "communication_performance",
+        "parameter_keys": [],
+        "instructions": "Set expectations for meetings, responsiveness, and performance measurement while remote."
+      },
+      {
+        "number": 5,
+        "title": "Security and Compliance",
+        "key": "security_compliance",
+        "parameter_keys": [],
+        "instructions": "Reference data handling, VPN use, and policy violations while working remotely."
+      }
+    ]
+  },
+  "code_of_conduct": {
+    "title": "Code of Conduct",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Introduction and Commitment",
+        "key": "introduction",
+        "parameter_keys": [],
+        "instructions": "State organizational values, professional behavior expectations, and applicability."
+      },
+      {
+        "number": 2,
+        "title": "Standards of Behavior",
+        "key": "standards_of_behavior",
+        "parameter_keys": [],
+        "instructions": "Cover respect, anti-harassment, conflicts of interest, and use of company resources."
+      },
+      {
+        "number": 3,
+        "title": "Reporting Concerns",
+        "key": "reporting_concerns",
+        "parameter_keys": ["reporting_window_days", "whistleblower_hotline"],
+        "instructions": "Explain how to report misconduct, reporting window in days, and whether a whistleblower hotline exists."
+      },
+      {
+        "number": 4,
+        "title": "Training and Acknowledgment",
+        "key": "training_acknowledgment",
+        "parameter_keys": ["training_frequency_months"],
+        "instructions": "Describe mandatory conduct training frequency and employee acknowledgment requirements."
+      },
+      {
+        "number": 5,
+        "title": "Investigation and Consequences",
+        "key": "investigation_consequences",
+        "parameter_keys": [],
+        "instructions": "Outline investigation process, confidentiality, and disciplinary outcomes."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Benefits & Insurance Policy",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Benefits Overview",
+        "key": "benefits_overview",
+        "parameter_keys": [],
+        "instructions": "Summarize the benefits program and eligibility categories."
+      },
+      {
+        "number": 2,
+        "title": "Health and Dental Coverage",
+        "key": "health_dental",
+        "parameter_keys": ["health_insurance_coverage_pct", "dental_coverage_pct"],
+        "instructions": "Include a simple HTML table listing employer coverage percentages for health and dental insurance."
+      },
+      {
+        "number": 3,
+        "title": "Retirement and Savings",
+        "key": "retirement_savings",
+        "parameter_keys": ["retirement_match_pct"],
+        "instructions": "Explain retirement plan match percentage and enrollment basics."
+      },
+      {
+        "number": 4,
+        "title": "Enrollment and Waiting Period",
+        "key": "enrollment_waiting_period",
+        "parameter_keys": ["waiting_period_days"],
+        "instructions": "State waiting period before benefits start and open enrollment windows."
+      },
+      {
+        "number": 5,
+        "title": "Changes and Continuation",
+        "key": "changes_continuation",
+        "parameter_keys": [],
+        "instructions": "Cover life events, COBRA or local equivalent references, and plan change notices."
+      }
+    ]
+  },
+  "expense": {
+    "title": "Expense Reimbursement Policy",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Policy Scope",
+        "key": "policy_scope",
+        "parameter_keys": [],
+        "instructions": "Define reimbursable business expenses and non-reimbursable personal costs."
+      },
+      {
+        "number": 2,
+        "title": "Eligible Expenses",
+        "key": "eligible_expenses",
+        "parameter_keys": [],
+        "instructions": "List common eligible categories: travel, meals, supplies, with reasonable limits language."
+      },
+      {
+        "number": 3,
+        "title": "Receipts and Submission",
+        "key": "receipts_submission",
+        "parameter_keys": ["receipt_required_above_usd", "expense_reimbursement_days"],
+        "instructions": "State receipt threshold, submission deadlines, and reimbursement SLA in business days."
+      },
+      {
+        "number": 4,
+        "title": "Approval Limits",
+        "key": "approval_limits",
+        "parameter_keys": ["max_single_expense_usd"],
+        "instructions": "Explain pre-approval requirements above the single-expense limit and manager escalation."
+      },
+      {
+        "number": 5,
+        "title": "Audit and Non-Compliance",
+        "key": "audit_compliance",
+        "parameter_keys": [],
+        "instructions": "Describe audit rights, duplicate claims, and consequences of policy violations."
+      }
+    ]
+  },
+  "performance": {
+    "title": "Performance Review Policy",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Performance Management Overview",
+        "key": "performance_overview",
+        "parameter_keys": [],
+        "instructions": "Explain goals of performance management and link to career development."
+      },
+      {
+        "number": 2,
+        "title": "Probation Period",
+        "key": "probation_period",
+        "parameter_keys": ["probation_months"],
+        "instructions": "Define probation length, check-ins, and confirmation criteria for new hires."
+      },
+      {
+        "number": 3,
+        "title": "Review Cycle and Ratings",
+        "key": "review_cycle_ratings",
+        "parameter_keys": ["review_cycle_months", "rating_scale_max"],
+        "instructions": "State review frequency and describe the rating scale maximum."
+      },
+      {
+        "number": 4,
+        "title": "Performance Improvement Plans",
+        "key": "performance_improvement_plans",
+        "parameter_keys": ["pip_duration_days"],
+        "instructions": "Explain PIP triggers, standard duration in days, and success criteria."
+      },
+      {
+        "number": 5,
+        "title": "Documentation and Appeals",
+        "key": "documentation_appeals",
+        "parameter_keys": [],
+        "instructions": "Cover record keeping, calibration, and employee appeal process."
+      }
+    ]
+  },
+  "onboarding": {
+    "title": "Onboarding Policy",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Welcome and Objectives",
+        "key": "welcome_objectives",
+        "parameter_keys": [],
+        "instructions": "Welcome new hires and state onboarding goals for first 30/60/90 day success."
+      },
+      {
+        "number": 2,
+        "title": "Onboarding Program Timeline",
+        "key": "onboarding_timeline",
+        "parameter_keys": ["onboarding_duration_days"],
+        "instructions": "Describe structured onboarding duration in business days and key milestones."
+      },
+      {
+        "number": 3,
+        "title": "Buddy and Mentor Program",
+        "key": "buddy_program",
+        "parameter_keys": ["buddy_program_weeks"],
+        "instructions": "Explain buddy assignment duration in weeks and responsibilities."
+      },
+      {
+        "number": 4,
+        "title": "IT Provisioning and Access",
+        "key": "it_provisioning",
+        "parameter_keys": ["it_provisioning_days"],
+        "instructions": "State target days for laptop, accounts, and system access provisioning."
+      },
+      {
+        "number": 5,
+        "title": "Compliance and First-Week Checklist",
+        "key": "compliance_checklist",
+        "parameter_keys": [],
+        "instructions": "List mandatory trainings, policy acknowledgments, and HR/IT checkpoints."
+      }
+    ]
+  },
+  "termination": {
+    "title": "Termination & Exit Policy",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Policy Overview",
+        "key": "policy_overview",
+        "parameter_keys": [],
+        "instructions": "Distinguish voluntary resignation, involuntary termination, and retirement."
+      },
+      {
+        "number": 2,
+        "title": "Notice Period",
+        "key": "notice_period",
+        "parameter_keys": ["notice_period_days"],
+        "instructions": "State required notice period in days for voluntary resignation by level if needed."
+      },
+      {
+        "number": 3,
+        "title": "Severance Guidelines",
+        "key": "severance_guidelines",
+        "parameter_keys": ["severance_weeks_per_year"],
+        "instructions": "Explain severance weeks per year of service and eligibility conditions."
+      },
+      {
+        "number": 4,
+        "title": "Exit Process and Interviews",
+        "key": "exit_process",
+        "parameter_keys": ["exit_interview_required"],
+        "instructions": "Cover exit interview requirement, asset return, and final pay timeline."
+      },
+      {
+        "number": 5,
+        "title": "Post-Employment Obligations",
+        "key": "post_employment",
+        "parameter_keys": [],
+        "instructions": "Reference confidentiality, non-solicitation where applicable, and reference checks."
+      }
+    ]
+  },
+  "data_security": {
+    "title": "Data Security & IT Policy",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Purpose and Scope",
+        "key": "purpose_scope",
+        "parameter_keys": [],
+        "instructions": "Define information security objectives and systems covered."
+      },
+      {
+        "number": 2,
+        "title": "Account and Password Standards",
+        "key": "account_password",
+        "parameter_keys": ["password_min_length", "mfa_required"],
+        "instructions": "State minimum password length and whether MFA is mandatory for all users."
+      },
+      {
+        "number": 3,
+        "title": "Device and Data Protection",
+        "key": "device_protection",
+        "parameter_keys": ["device_encryption_required"],
+        "instructions": "Require device encryption, lost device reporting, and removable media rules."
+      },
+      {
+        "number": 4,
+        "title": "Security Awareness Training",
+        "key": "security_training",
+        "parameter_keys": ["phishing_training_frequency_months"],
+        "instructions": "State phishing and security training frequency in months."
+      },
+      {
+        "number": 5,
+        "title": "Incident Reporting",
+        "key": "incident_reporting",
+        "parameter_keys": [],
+        "instructions": "Explain how to report suspected breaches and expected response timelines."
+      }
+    ]
+  },
+  "travel": {
+    "title": "Travel Policy",
+    "sections": [
+      {
+        "number": 1,
+        "title": "Policy Scope and Approval",
+        "key": "scope_approval",
+        "parameter_keys": [],
+        "instructions": "Define business travel, pre-trip approval, and duty of care."
+      },
+      {
+        "number": 2,
+        "title": "Booking and Class of Travel",
+        "key": "booking_class",
+        "parameter_keys": ["advance_booking_days", "economy_class_max_hours"],
+        "instructions": "State advance booking requirement and economy class rule based on flight duration hours."
+      },
+      {
+        "number": 3,
+        "title": "Per Diem and Lodging",
+        "key": "per_diem_lodging",
+        "parameter_keys": ["per_diem_usd", "max_hotel_rate_usd"],
+        "instructions": "Include per diem amount and maximum hotel nightly rate; mention manager approval above limits."
+      },
+      {
+        "number": 4,
+        "title": "Ground Transportation and Meals",
+        "key": "ground_transport_meals",
+        "parameter_keys": [],
+        "instructions": "Cover taxis, rental cars, meal caps, and alcohol exclusion."
+      },
+      {
+        "number": 5,
+        "title": "Expense Reporting After Travel",
+        "key": "expense_reporting",
+        "parameter_keys": [],
+        "instructions": "Link to expense submission deadlines and required documentation after trips."
+      }
+    ]
+  }
+}

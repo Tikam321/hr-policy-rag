@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Benefits Overview", sections.benefits_overview) }}
+{{ section(2, "Health and Dental Coverage", sections.health_dental) }}
+{{ section(3, "Retirement and Savings", sections.retirement_savings) }}
+{{ section(4, "Enrollment and Waiting Period", sections.enrollment_waiting_period) }}
+{{ section(5, "Changes and Continuation", sections.changes_continuation) }}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Welcome and Objectives", sections.welcome_objectives) }}
+{{ section(2, "Onboarding Program Timeline", sections.onboarding_timeline) }}
+{{ section(3, "Buddy and Mentor Program", sections.buddy_program) }}
+{{ section(4, "IT Provisioning and Access", sections.it_provisioning) }}
+{{ section(5, "Compliance and First-Week Checklist", sections.compliance_checklist) }}
+{% endblock %}

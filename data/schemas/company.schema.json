@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hr-policy-rag.local/schemas/company.schema.json",
+  "title": "Company Profile",
+  "description": "Seed company profile used for synthetic HR policy generation and multi-tenant retrieval filters.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "company_id",
+    "name",
+    "industry",
+    "region",
+    "size",
+    "employee_count"
+  ],
+  "properties": {
+    "company_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable slug identifier used in paths, metadata, and retrieval filters.",
+      "examples": ["novatech-solutions"]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable company display name.",
+      "examples": ["NovaTech Solutions"]
+    },
+    "industry": {
+      "type": "string",
+      "enum": [
+        "technology",
+        "healthcare",
+        "retail",
+        "finance",
+        "manufacturing",
+        "education",
+        "consulting",
+        "other"
+      ],
+      "description": "Industry vertical — influences policy tone in generation."
+    },
+    "region": {
+      "type": "string",
+      "description": "Primary operating region or jurisdiction code.",
+      "examples": ["US", "UK", "IN", "EU"]
+    },
+    "size": {
+      "type": "string",
+      "enum": ["startup", "small", "mid-size", "enterprise"],
+      "description": "Company size bucket."
+    },
+    "employee_count": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Approximate headcount for policy context."
+    }
+  }
+}

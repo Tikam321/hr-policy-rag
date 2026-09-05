@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Purpose and Scope", sections.purpose_and_scope) }}
+{{ section(2, "Annual Leave Entitlement", sections.annual_leave_entitlement) }}
+{{ section(3, "Sick Leave", sections.sick_leave) }}
+{{ section(4, "Carry Forward and Year-End", sections.carry_forward) }}
+{{ section(5, "Request and Approval Process", sections.request_process) }}
+{% endblock %}

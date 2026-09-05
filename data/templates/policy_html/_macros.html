@@ -1,0 +1,6 @@
+{% macro section(number, title, content) -%}
+<section class="policy-section">
+  <h2>{{ number }}. {{ title }}</h2>
+  <div class="section-body">{{ content | safe }}</div>
+</section>
+{%- endmacro %}

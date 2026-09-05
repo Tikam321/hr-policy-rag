@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Purpose and Scope", sections.purpose_scope) }}
+{{ section(2, "Account and Password Standards", sections.account_password) }}
+{{ section(3, "Device and Data Protection", sections.device_protection) }}
+{{ section(4, "Security Awareness Training", sections.security_training) }}
+{{ section(5, "Incident Reporting", sections.incident_reporting) }}
+{% endblock %}

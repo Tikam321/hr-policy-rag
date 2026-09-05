@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Policy Overview", sections.policy_overview) }}
+{{ section(2, "Notice Period", sections.notice_period) }}
+{{ section(3, "Severance Guidelines", sections.severance_guidelines) }}
+{{ section(4, "Exit Process and Interviews", sections.exit_process) }}
+{{ section(5, "Post-Employment Obligations", sections.post_employment) }}
+{% endblock %}

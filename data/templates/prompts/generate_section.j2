@@ -1,0 +1,24 @@
+Company profile:
+- Name: {{ company_name }}
+- Company ID: {{ company_id }}
+- Industry: {{ industry }}
+- Region: {{ region }}
+- Size: {{ size }} ({{ employee_count }} employees)
+
+Policy:
+- Type: {{ policy_type }}
+- Title: {{ policy_title }}
+- Version: {{ version }}
+- Effective date: {{ effective_date }}
+
+Ground-truth parameters (must appear accurately in this section):
+{% for key in required_parameter_keys %}
+- {{ key }}: {{ parameters[key] }}
+{% endfor %}
+
+Section {{ section_number }}: {{ section_title }}
+
+Section instructions:
+{{ section_instructions }}
+
+Write the HTML body content for this section only.

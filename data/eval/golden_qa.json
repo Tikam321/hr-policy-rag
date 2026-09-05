@@ -1,0 +1,1147 @@
+[
+  {
+    "id": "eval-001",
+    "question": "How many paid annual leave days do full-time employees receive at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "30",
+      "days"
+    ],
+    "source_doc_id": "novatech-solutions-leave-policy-2024",
+    "source_section": "Annual Leave Entitlement",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "leave_policy"
+  },
+  {
+    "id": "eval-002",
+    "question": "How many remote work days per week are allowed at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "4"
+    ],
+    "source_doc_id": "novatech-solutions-remote-work-2024",
+    "source_section": "Remote Schedule",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "remote_work"
+  },
+  {
+    "id": "eval-003",
+    "question": "How often must employees complete code of conduct training at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "14",
+      "month"
+    ],
+    "source_doc_id": "novatech-solutions-code-of-conduct-2024",
+    "source_section": "Training and Acknowledgment",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "code_of_conduct"
+  },
+  {
+    "id": "eval-004",
+    "question": "What percentage of health insurance premiums does NovaTech Solutions cover for employees?",
+    "expected_answer_contains": [
+      "58",
+      "%"
+    ],
+    "source_doc_id": "novatech-solutions-benefits-2024",
+    "source_section": "Health and Dental Coverage",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "benefits"
+  },
+  {
+    "id": "eval-005",
+    "question": "Within how many business days does NovaTech Solutions reimburse approved expenses?",
+    "expected_answer_contains": [
+      "45",
+      "days"
+    ],
+    "source_doc_id": "novatech-solutions-expense-2024",
+    "source_section": "Receipts and Submission",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "expense"
+  },
+  {
+    "id": "eval-006",
+    "question": "How frequently are formal performance reviews conducted at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "12",
+      "month"
+    ],
+    "source_doc_id": "novatech-solutions-performance-2024",
+    "source_section": "Review Cycle and Ratings",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "performance"
+  },
+  {
+    "id": "eval-007",
+    "question": "How long is the structured onboarding program at NovaTech Solutions in business days?",
+    "expected_answer_contains": [
+      "11",
+      "days"
+    ],
+    "source_doc_id": "novatech-solutions-onboarding-2024",
+    "source_section": "Onboarding Program Timeline",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "onboarding"
+  },
+  {
+    "id": "eval-008",
+    "question": "What is the required notice period for voluntary resignation at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "90",
+      "days"
+    ],
+    "source_doc_id": "novatech-solutions-termination-2024",
+    "source_section": "Notice Period",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "termination"
+  },
+  {
+    "id": "eval-009",
+    "question": "What is the minimum password length for corporate accounts at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "14"
+    ],
+    "source_doc_id": "novatech-solutions-data-security-2024",
+    "source_section": "Account and Password Standards",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "data_security"
+  },
+  {
+    "id": "eval-010",
+    "question": "What is the domestic per diem allowance at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "66",
+      "$"
+    ],
+    "source_doc_id": "novatech-solutions-travel-2024",
+    "source_section": "Per Diem and Lodging",
+    "company_id": "novatech-solutions",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "travel"
+  },
+  {
+    "id": "eval-011",
+    "question": "How many paid annual leave days do full-time employees receive at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "23",
+      "days"
+    ],
+    "source_doc_id": "greenleaf-healthcare-leave-policy-2024",
+    "source_section": "Annual Leave Entitlement",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "leave_policy"
+  },
+  {
+    "id": "eval-012",
+    "question": "How many remote work days per week are allowed at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "4"
+    ],
+    "source_doc_id": "greenleaf-healthcare-remote-work-2024",
+    "source_section": "Remote Schedule",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "remote_work"
+  },
+  {
+    "id": "eval-013",
+    "question": "How often must employees complete code of conduct training at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "19",
+      "month"
+    ],
+    "source_doc_id": "greenleaf-healthcare-code-of-conduct-2024",
+    "source_section": "Training and Acknowledgment",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "code_of_conduct"
+  },
+  {
+    "id": "eval-014",
+    "question": "What percentage of health insurance premiums does GreenLeaf Healthcare cover for employees?",
+    "expected_answer_contains": [
+      "71",
+      "%"
+    ],
+    "source_doc_id": "greenleaf-healthcare-benefits-2024",
+    "source_section": "Health and Dental Coverage",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "benefits"
+  },
+  {
+    "id": "eval-015",
+    "question": "Within how many business days does GreenLeaf Healthcare reimburse approved expenses?",
+    "expected_answer_contains": [
+      "37",
+      "days"
+    ],
+    "source_doc_id": "greenleaf-healthcare-expense-2024",
+    "source_section": "Receipts and Submission",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "expense"
+  },
+  {
+    "id": "eval-016",
+    "question": "How frequently are formal performance reviews conducted at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "7",
+      "month"
+    ],
+    "source_doc_id": "greenleaf-healthcare-performance-2024",
+    "source_section": "Review Cycle and Ratings",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "performance"
+  },
+  {
+    "id": "eval-017",
+    "question": "How long is the structured onboarding program at GreenLeaf Healthcare in business days?",
+    "expected_answer_contains": [
+      "30",
+      "days"
+    ],
+    "source_doc_id": "greenleaf-healthcare-onboarding-2024",
+    "source_section": "Onboarding Program Timeline",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "onboarding"
+  },
+  {
+    "id": "eval-018",
+    "question": "What is the required notice period for voluntary resignation at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "65",
+      "days"
+    ],
+    "source_doc_id": "greenleaf-healthcare-termination-2024",
+    "source_section": "Notice Period",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "termination"
+  },
+  {
+    "id": "eval-019",
+    "question": "What is the minimum password length for corporate accounts at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "13"
+    ],
+    "source_doc_id": "greenleaf-healthcare-data-security-2024",
+    "source_section": "Account and Password Standards",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "data_security"
+  },
+  {
+    "id": "eval-020",
+    "question": "What is the domestic per diem allowance at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "54",
+      "$"
+    ],
+    "source_doc_id": "greenleaf-healthcare-travel-2024",
+    "source_section": "Per Diem and Lodging",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "travel"
+  },
+  {
+    "id": "eval-021",
+    "question": "How many paid annual leave days do full-time employees receive at Urban Retail Group?",
+    "expected_answer_contains": [
+      "27",
+      "days"
+    ],
+    "source_doc_id": "urban-retail-group-leave-policy-2024",
+    "source_section": "Annual Leave Entitlement",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "leave_policy"
+  },
+  {
+    "id": "eval-022",
+    "question": "How many remote work days per week are allowed at Urban Retail Group?",
+    "expected_answer_contains": [
+      "0"
+    ],
+    "source_doc_id": "urban-retail-group-remote-work-2024",
+    "source_section": "Remote Schedule",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "remote_work"
+  },
+  {
+    "id": "eval-023",
+    "question": "How often must employees complete code of conduct training at Urban Retail Group?",
+    "expected_answer_contains": [
+      "16",
+      "month"
+    ],
+    "source_doc_id": "urban-retail-group-code-of-conduct-2024",
+    "source_section": "Training and Acknowledgment",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "code_of_conduct"
+  },
+  {
+    "id": "eval-024",
+    "question": "What percentage of health insurance premiums does Urban Retail Group cover for employees?",
+    "expected_answer_contains": [
+      "92",
+      "%"
+    ],
+    "source_doc_id": "urban-retail-group-benefits-2024",
+    "source_section": "Health and Dental Coverage",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "benefits"
+  },
+  {
+    "id": "eval-025",
+    "question": "Within how many business days does Urban Retail Group reimburse approved expenses?",
+    "expected_answer_contains": [
+      "23",
+      "days"
+    ],
+    "source_doc_id": "urban-retail-group-expense-2024",
+    "source_section": "Receipts and Submission",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "expense"
+  },
+  {
+    "id": "eval-026",
+    "question": "How frequently are formal performance reviews conducted at Urban Retail Group?",
+    "expected_answer_contains": [
+      "8",
+      "month"
+    ],
+    "source_doc_id": "urban-retail-group-performance-2024",
+    "source_section": "Review Cycle and Ratings",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "performance"
+  },
+  {
+    "id": "eval-027",
+    "question": "How long is the structured onboarding program at Urban Retail Group in business days?",
+    "expected_answer_contains": [
+      "14",
+      "days"
+    ],
+    "source_doc_id": "urban-retail-group-onboarding-2024",
+    "source_section": "Onboarding Program Timeline",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "onboarding"
+  },
+  {
+    "id": "eval-028",
+    "question": "What is the required notice period for voluntary resignation at Urban Retail Group?",
+    "expected_answer_contains": [
+      "21",
+      "days"
+    ],
+    "source_doc_id": "urban-retail-group-termination-2024",
+    "source_section": "Notice Period",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "termination"
+  },
+  {
+    "id": "eval-029",
+    "question": "What is the minimum password length for corporate accounts at Urban Retail Group?",
+    "expected_answer_contains": [
+      "9"
+    ],
+    "source_doc_id": "urban-retail-group-data-security-2024",
+    "source_section": "Account and Password Standards",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "data_security"
+  },
+  {
+    "id": "eval-030",
+    "question": "What is the domestic per diem allowance at Urban Retail Group?",
+    "expected_answer_contains": [
+      "46",
+      "$"
+    ],
+    "source_doc_id": "urban-retail-group-travel-2024",
+    "source_section": "Per Diem and Lodging",
+    "company_id": "urban-retail-group",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "travel"
+  },
+  {
+    "id": "eval-031",
+    "question": "How many paid annual leave days do full-time employees receive at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "16",
+      "days"
+    ],
+    "source_doc_id": "summit-financial-leave-policy-2024",
+    "source_section": "Annual Leave Entitlement",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "leave_policy"
+  },
+  {
+    "id": "eval-032",
+    "question": "How many remote work days per week are allowed at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "5"
+    ],
+    "source_doc_id": "summit-financial-remote-work-2024",
+    "source_section": "Remote Schedule",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "remote_work"
+  },
+  {
+    "id": "eval-033",
+    "question": "How often must employees complete code of conduct training at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "6",
+      "month"
+    ],
+    "source_doc_id": "summit-financial-code-of-conduct-2024",
+    "source_section": "Training and Acknowledgment",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "code_of_conduct"
+  },
+  {
+    "id": "eval-034",
+    "question": "What percentage of health insurance premiums does Summit Financial Partners cover for employees?",
+    "expected_answer_contains": [
+      "71",
+      "%"
+    ],
+    "source_doc_id": "summit-financial-benefits-2024",
+    "source_section": "Health and Dental Coverage",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "benefits"
+  },
+  {
+    "id": "eval-035",
+    "question": "Within how many business days does Summit Financial Partners reimburse approved expenses?",
+    "expected_answer_contains": [
+      "29",
+      "days"
+    ],
+    "source_doc_id": "summit-financial-expense-2024",
+    "source_section": "Receipts and Submission",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "expense"
+  },
+  {
+    "id": "eval-036",
+    "question": "How frequently are formal performance reviews conducted at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "12",
+      "month"
+    ],
+    "source_doc_id": "summit-financial-performance-2024",
+    "source_section": "Review Cycle and Ratings",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "performance"
+  },
+  {
+    "id": "eval-037",
+    "question": "How long is the structured onboarding program at Summit Financial Partners in business days?",
+    "expected_answer_contains": [
+      "26",
+      "days"
+    ],
+    "source_doc_id": "summit-financial-onboarding-2024",
+    "source_section": "Onboarding Program Timeline",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "onboarding"
+  },
+  {
+    "id": "eval-038",
+    "question": "What is the required notice period for voluntary resignation at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "8",
+      "days"
+    ],
+    "source_doc_id": "summit-financial-termination-2024",
+    "source_section": "Notice Period",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "termination"
+  },
+  {
+    "id": "eval-039",
+    "question": "What is the minimum password length for corporate accounts at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "10"
+    ],
+    "source_doc_id": "summit-financial-data-security-2024",
+    "source_section": "Account and Password Standards",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "data_security"
+  },
+  {
+    "id": "eval-040",
+    "question": "What is the domestic per diem allowance at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "51",
+      "$"
+    ],
+    "source_doc_id": "summit-financial-travel-2024",
+    "source_section": "Per Diem and Lodging",
+    "company_id": "summit-financial",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "travel"
+  },
+  {
+    "id": "eval-041",
+    "question": "How many paid annual leave days do full-time employees receive at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "12",
+      "days"
+    ],
+    "source_doc_id": "craftworks-manufacturing-leave-policy-2024",
+    "source_section": "Annual Leave Entitlement",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "leave_policy"
+  },
+  {
+    "id": "eval-042",
+    "question": "How many remote work days per week are allowed at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "1"
+    ],
+    "source_doc_id": "craftworks-manufacturing-remote-work-2024",
+    "source_section": "Remote Schedule",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "remote_work"
+  },
+  {
+    "id": "eval-043",
+    "question": "How often must employees complete code of conduct training at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "20",
+      "month"
+    ],
+    "source_doc_id": "craftworks-manufacturing-code-of-conduct-2024",
+    "source_section": "Training and Acknowledgment",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "code_of_conduct"
+  },
+  {
+    "id": "eval-044",
+    "question": "What percentage of health insurance premiums does CraftWorks Manufacturing cover for employees?",
+    "expected_answer_contains": [
+      "95",
+      "%"
+    ],
+    "source_doc_id": "craftworks-manufacturing-benefits-2024",
+    "source_section": "Health and Dental Coverage",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "benefits"
+  },
+  {
+    "id": "eval-045",
+    "question": "Within how many business days does CraftWorks Manufacturing reimburse approved expenses?",
+    "expected_answer_contains": [
+      "8",
+      "days"
+    ],
+    "source_doc_id": "craftworks-manufacturing-expense-2024",
+    "source_section": "Receipts and Submission",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "expense"
+  },
+  {
+    "id": "eval-046",
+    "question": "How frequently are formal performance reviews conducted at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "12",
+      "month"
+    ],
+    "source_doc_id": "craftworks-manufacturing-performance-2024",
+    "source_section": "Review Cycle and Ratings",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "performance"
+  },
+  {
+    "id": "eval-047",
+    "question": "How long is the structured onboarding program at CraftWorks Manufacturing in business days?",
+    "expected_answer_contains": [
+      "15",
+      "days"
+    ],
+    "source_doc_id": "craftworks-manufacturing-onboarding-2024",
+    "source_section": "Onboarding Program Timeline",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "onboarding"
+  },
+  {
+    "id": "eval-048",
+    "question": "What is the required notice period for voluntary resignation at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "44",
+      "days"
+    ],
+    "source_doc_id": "craftworks-manufacturing-termination-2024",
+    "source_section": "Notice Period",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "termination"
+  },
+  {
+    "id": "eval-049",
+    "question": "What is the minimum password length for corporate accounts at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "13"
+    ],
+    "source_doc_id": "craftworks-manufacturing-data-security-2024",
+    "source_section": "Account and Password Standards",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "data_security"
+  },
+  {
+    "id": "eval-050",
+    "question": "What is the domestic per diem allowance at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "89",
+      "$"
+    ],
+    "source_doc_id": "craftworks-manufacturing-travel-2024",
+    "source_section": "Per Diem and Lodging",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "easy",
+    "answerable": true,
+    "category": "factual",
+    "policy_type": "travel"
+  },
+  {
+    "id": "eval-051",
+    "question": "At NovaTech Solutions, how many annual leave days are offered and how long is the benefits waiting period for new hires?",
+    "expected_answer_contains": [
+      "30",
+      "15",
+      "days"
+    ],
+    "source_doc_ids": [
+      "novatech-solutions-leave-policy-2024",
+      "novatech-solutions-benefits-2024"
+    ],
+    "company_id": "novatech-solutions",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-052",
+    "question": "What are the expense reimbursement timelines and domestic per diem rates at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "45",
+      "66"
+    ],
+    "source_doc_ids": [
+      "novatech-solutions-expense-2024",
+      "novatech-solutions-travel-2024"
+    ],
+    "company_id": "novatech-solutions",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-053",
+    "question": "How long is probation and the structured onboarding program at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "6",
+      "11"
+    ],
+    "source_doc_ids": [
+      "novatech-solutions-performance-2024",
+      "novatech-solutions-onboarding-2024"
+    ],
+    "company_id": "novatech-solutions",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "multi_section"
+  },
+  {
+    "id": "eval-054",
+    "question": "Is MFA required and is a whistleblower hotline available at NovaTech Solutions?",
+    "expected_answer_contains": [
+      "true",
+      "false"
+    ],
+    "source_doc_ids": [
+      "novatech-solutions-data-security-2024",
+      "novatech-solutions-code-of-conduct-2024"
+    ],
+    "company_id": "novatech-solutions",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-055",
+    "question": "At GreenLeaf Healthcare, how many annual leave days are offered and how long is the benefits waiting period for new hires?",
+    "expected_answer_contains": [
+      "23",
+      "37",
+      "days"
+    ],
+    "source_doc_ids": [
+      "greenleaf-healthcare-leave-policy-2024",
+      "greenleaf-healthcare-benefits-2024"
+    ],
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-056",
+    "question": "What are the expense reimbursement timelines and domestic per diem rates at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "37",
+      "54"
+    ],
+    "source_doc_ids": [
+      "greenleaf-healthcare-expense-2024",
+      "greenleaf-healthcare-travel-2024"
+    ],
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-057",
+    "question": "How long is probation and the structured onboarding program at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "2",
+      "30"
+    ],
+    "source_doc_ids": [
+      "greenleaf-healthcare-performance-2024",
+      "greenleaf-healthcare-onboarding-2024"
+    ],
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "multi_section"
+  },
+  {
+    "id": "eval-058",
+    "question": "Is MFA required and is a whistleblower hotline available at GreenLeaf Healthcare?",
+    "expected_answer_contains": [
+      "false",
+      "true"
+    ],
+    "source_doc_ids": [
+      "greenleaf-healthcare-data-security-2024",
+      "greenleaf-healthcare-code-of-conduct-2024"
+    ],
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-059",
+    "question": "At Urban Retail Group, how many annual leave days are offered and how long is the benefits waiting period for new hires?",
+    "expected_answer_contains": [
+      "27",
+      "51",
+      "days"
+    ],
+    "source_doc_ids": [
+      "urban-retail-group-leave-policy-2024",
+      "urban-retail-group-benefits-2024"
+    ],
+    "company_id": "urban-retail-group",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-060",
+    "question": "What are the expense reimbursement timelines and domestic per diem rates at Urban Retail Group?",
+    "expected_answer_contains": [
+      "23",
+      "46"
+    ],
+    "source_doc_ids": [
+      "urban-retail-group-expense-2024",
+      "urban-retail-group-travel-2024"
+    ],
+    "company_id": "urban-retail-group",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-061",
+    "question": "How long is probation and the structured onboarding program at Urban Retail Group?",
+    "expected_answer_contains": [
+      "2",
+      "14"
+    ],
+    "source_doc_ids": [
+      "urban-retail-group-performance-2024",
+      "urban-retail-group-onboarding-2024"
+    ],
+    "company_id": "urban-retail-group",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "multi_section"
+  },
+  {
+    "id": "eval-062",
+    "question": "Is MFA required and is a whistleblower hotline available at Urban Retail Group?",
+    "expected_answer_contains": [
+      "true",
+      "true"
+    ],
+    "source_doc_ids": [
+      "urban-retail-group-data-security-2024",
+      "urban-retail-group-code-of-conduct-2024"
+    ],
+    "company_id": "urban-retail-group",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-063",
+    "question": "At Summit Financial Partners, how many annual leave days are offered and how long is the benefits waiting period for new hires?",
+    "expected_answer_contains": [
+      "16",
+      "51",
+      "days"
+    ],
+    "source_doc_ids": [
+      "summit-financial-leave-policy-2024",
+      "summit-financial-benefits-2024"
+    ],
+    "company_id": "summit-financial",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-064",
+    "question": "What are the expense reimbursement timelines and domestic per diem rates at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "29",
+      "51"
+    ],
+    "source_doc_ids": [
+      "summit-financial-expense-2024",
+      "summit-financial-travel-2024"
+    ],
+    "company_id": "summit-financial",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-065",
+    "question": "How long is probation and the structured onboarding program at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "4",
+      "26"
+    ],
+    "source_doc_ids": [
+      "summit-financial-performance-2024",
+      "summit-financial-onboarding-2024"
+    ],
+    "company_id": "summit-financial",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "multi_section"
+  },
+  {
+    "id": "eval-066",
+    "question": "Is MFA required and is a whistleblower hotline available at Summit Financial Partners?",
+    "expected_answer_contains": [
+      "false",
+      "true"
+    ],
+    "source_doc_ids": [
+      "summit-financial-data-security-2024",
+      "summit-financial-code-of-conduct-2024"
+    ],
+    "company_id": "summit-financial",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-067",
+    "question": "At CraftWorks Manufacturing, how many annual leave days are offered and how long is the benefits waiting period for new hires?",
+    "expected_answer_contains": [
+      "12",
+      "33",
+      "days"
+    ],
+    "source_doc_ids": [
+      "craftworks-manufacturing-leave-policy-2024",
+      "craftworks-manufacturing-benefits-2024"
+    ],
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-068",
+    "question": "What are the expense reimbursement timelines and domestic per diem rates at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "8",
+      "89"
+    ],
+    "source_doc_ids": [
+      "craftworks-manufacturing-expense-2024",
+      "craftworks-manufacturing-travel-2024"
+    ],
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-069",
+    "question": "How long is probation and the structured onboarding program at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "3",
+      "15"
+    ],
+    "source_doc_ids": [
+      "craftworks-manufacturing-performance-2024",
+      "craftworks-manufacturing-onboarding-2024"
+    ],
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "multi_section"
+  },
+  {
+    "id": "eval-070",
+    "question": "Is MFA required and is a whistleblower hotline available at CraftWorks Manufacturing?",
+    "expected_answer_contains": [
+      "false",
+      "true"
+    ],
+    "source_doc_ids": [
+      "craftworks-manufacturing-data-security-2024",
+      "craftworks-manufacturing-code-of-conduct-2024"
+    ],
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "medium",
+    "answerable": true,
+    "category": "cross_policy"
+  },
+  {
+    "id": "eval-071",
+    "question": "What is the employee stock option vesting schedule at NovaTech Solutions?",
+    "company_id": "novatech-solutions",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "eval-072",
+    "question": "What is the exact office cafeteria subsidy amount at GreenLeaf Healthcare?",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "eval-073",
+    "question": "What is the CEO's personal email address at Urban Retail Group?",
+    "company_id": "urban-retail-group",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "eval-074",
+    "question": "How many parking spots are reserved for employees at Summit Financial Partners?",
+    "company_id": "summit-financial",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "eval-075",
+    "question": "What was the company's total revenue last quarter at CraftWorks Manufacturing?",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "eval-076",
+    "question": "What is the pet insurance coverage at NovaTech Solutions?",
+    "company_id": "novatech-solutions",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "eval-077",
+    "question": "What is the company match for charitable donations at GreenLeaf Healthcare?",
+    "company_id": "greenleaf-healthcare",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "eval-078",
+    "question": "What is the on-site childcare tuition subsidy at Urban Retail Group?",
+    "company_id": "urban-retail-group",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "eval-079",
+    "question": "What is the executive jet travel policy for interns at Summit Financial Partners?",
+    "company_id": "summit-financial",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  },
+  {
+    "id": "eval-080",
+    "question": "What is the company policy on moonlighting at second jobs for CraftWorks Manufacturing?",
+    "company_id": "craftworks-manufacturing",
+    "difficulty": "hard",
+    "answerable": false,
+    "category": "unanswerable"
+  }
+]

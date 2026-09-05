@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Performance Management Overview", sections.performance_overview) }}
+{{ section(2, "Probation Period", sections.probation_period) }}
+{{ section(3, "Review Cycle and Ratings", sections.review_cycle_ratings) }}
+{{ section(4, "Performance Improvement Plans", sections.performance_improvement_plans) }}
+{{ section(5, "Documentation and Appeals", sections.documentation_appeals) }}
+{% endblock %}

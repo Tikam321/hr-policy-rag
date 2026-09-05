@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hr-policy-rag.local/schemas/chunk.schema.json",
+  "title": "Document Chunk Metadata",
+  "description": "Metadata for a text chunk stored in Qdrant payload and PostgreSQL during ingestion.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "chunk_id",
+    "doc_id",
+    "company_id",
+    "policy_type",
+    "section",
+    "page",
+    "chunk_index",
+    "version",
+    "status",
+    "token_count"
+  ],
+  "properties": {
+    "chunk_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Globally unique chunk identifier.",
+      "examples": ["novatech-leave-2024-chunk-012"]
+    },
+    "doc_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Parent policy document identifier."
+    },
+    "company_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Company scope for multi-tenant retrieval filtering."
+    },
+    "policy_type": {
+      "type": "string",
+      "enum": [
+        "leave_policy",
+        "remote_work",
+        "code_of_conduct",
+        "benefits",
+        "expense",
+        "performance",
+        "onboarding",
+        "termination",
+        "data_security",
+        "travel"
+      ]
+    },
+    "section": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Heading or section title within the source document.",
+      "examples": ["Annual Leave Entitlement"]
+    },
+    "page": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "1-based page number in the source PDF."
+    },
+    "chunk_index": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Sequential index of this chunk within the document."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2})?$",
+      "description": "Policy version copied from parent document metadata."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "archived"],
+      "description": "Mirrors document status; archived chunks excluded from retrieval."
+    },
+    "token_count": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Token count of chunk text using the project's tokenizer."
+    },
+    "embedding_model": {
+      "type": "string",
+      "description": "Embedding model used when this chunk was indexed, e.g. text-embedding-3-small.",
+      "examples": ["text-embedding-3-small"]
+    },
+    "text_preview": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Optional truncated chunk text for debugging and eval (omit in production logs if sensitive)."
+    }
+  }
+}

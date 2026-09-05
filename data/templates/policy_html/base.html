@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ title }} — {{ company_name }}</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 2cm 2.2cm 2.4cm 2.2cm;
+      @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-size: 9pt;
+        color: #555;
+      }
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.45;
+      color: #1a1a1a;
+    }
+
+    header.policy-header {
+      border-bottom: 2px solid #1f4e79;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+    }
+
+    header.policy-header h1 {
+      font-size: 20pt;
+      margin: 0 0 6px 0;
+      color: #1f4e79;
+    }
+
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10pt;
+      margin-top: 8px;
+    }
+
+    .meta-table th {
+      text-align: left;
+      width: 28%;
+      padding: 4px 8px 4px 0;
+      color: #444;
+      font-weight: 600;
+    }
+
+    .meta-table td {
+      padding: 4px 0;
+    }
+
+    section.policy-section {
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+
+    section.policy-section h2 {
+      font-size: 13pt;
+      color: #1f4e79;
+      margin: 0 0 8px 0;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 4px;
+    }
+
+    section.policy-section h3 {
+      font-size: 11pt;
+      margin: 12px 0 6px 0;
+    }
+
+    .section-body p {
+      margin: 0 0 8px 0;
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 14px 0;
+      font-size: 10pt;
+    }
+
+    table.data-table th,
+    table.data-table td {
+      border: 1px solid #bbb;
+      padding: 6px 8px;
+      text-align: left;
+    }
+
+    table.data-table th {
+      background: #eef3f8;
+    }
+
+    footer.policy-footer {
+      margin-top: 32px;
+      padding-top: 10px;
+      border-top: 1px solid #ccc;
+      font-size: 9pt;
+      color: #555;
+    }
+
+    .confidential {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+  <header class="policy-header">
+    <h1>{{ title }}</h1>
+    <p><strong>{{ company_name }}</strong></p>
+    <table class="meta-table">
+      <tr>
+        <th>Document ID</th>
+        <td>{{ doc_id }}</td>
+        <th>Version</th>
+        <td>{{ version }}</td>
+      </tr>
+      <tr>
+        <th>Effective Date</th>
+        <td>{{ effective_date }}</td>
+        <th>Status</th>
+        <td>{{ status | capitalize }}</td>
+      </tr>
+      <tr>
+        <th>Policy Type</th>
+        <td colspan="3">{{ policy_type_label }}</td>
+      </tr>
+    </table>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="policy-footer">
+    <p class="confidential">Confidential — Internal Use Only</p>
+    <p>{{ company_name }} · {{ title }} · Version {{ version }} · Effective {{ effective_date }}</p>
+    <p>Document ID: {{ doc_id }} · Generated for synthetic HR policy corpus (HR Policy RAG)</p>
+  </footer>
+</body>
+</html>

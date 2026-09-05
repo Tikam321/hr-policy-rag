@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hr-policy-rag.local/schemas/eval_qa.schema.json",
+  "title": "Golden Eval Q&A Item",
+  "description": "Single question in the golden evaluation set with ground-truth expectations for retrieval and generation metrics.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "question",
+    "company_id",
+    "difficulty",
+    "answerable"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^eval-[0-9]{3,}$",
+      "description": "Stable eval item identifier.",
+      "examples": ["eval-001"]
+    },
+    "question": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Natural-language question posed to the RAG system."
+    },
+    "expected_answer_contains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "description": "Substrings that a correct answer must include (case-insensitive check in eval runner)."
+    },
+    "expected_answer_excludes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Optional substrings that must NOT appear (e.g. hallucinated numbers)."
+    },
+    "source_doc_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Expected primary source document for Recall@k measurement."
+    },
+    "source_section": {
+      "type": "string",
+      "description": "Expected section within the source document."
+    },
+    "source_doc_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "minItems": 2,
+      "description": "For cross-policy or multi-section questions — any of these docs in top-k counts as recall hit."
+    },
+    "company_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Company scope passed to the query API during eval."
+    },
+    "policy_type": {
+      "type": "string",
+      "enum": [
+        "leave_policy",
+        "remote_work",
+        "code_of_conduct",
+        "benefits",
+        "expense",
+        "performance",
+        "onboarding",
+        "termination",
+        "data_security",
+        "travel"
+      ],
+      "description": "Optional hint for categorizing eval failures by policy domain."
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard"],
+      "description": "easy = single chunk; medium = multi-section; hard = cross-policy or version-specific."
+    },
+    "answerable": {
+      "type": "boolean",
+      "description": "false = system should refuse (I don't know); tests refusal accuracy."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "factual",
+        "multi_section",
+        "version_specific",
+        "unanswerable",
+        "cross_policy"
+      ],
+      "description": "Eval bucket aligned with architecture/operations golden set composition."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional reviewer notes or generation provenance."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "answerable": { "const": true } },
+        "required": ["answerable"]
+      },
+      "then": {
+        "allOf": [
+          { "required": ["expected_answer_contains"] },
+          {
+            "anyOf": [
+              { "required": ["source_doc_id"] },
+              { "required": ["source_doc_ids"] }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": { "answerable": { "const": false } },
+        "required": ["answerable"]
+      },
+      "then": {
+        "not": {
+          "required": ["expected_answer_contains"]
+        }
+      }
+    }
+  ]
+}

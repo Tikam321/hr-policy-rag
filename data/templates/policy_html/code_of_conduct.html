@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Introduction and Commitment", sections.introduction) }}
+{{ section(2, "Standards of Behavior", sections.standards_of_behavior) }}
+{{ section(3, "Reporting Concerns", sections.reporting_concerns) }}
+{{ section(4, "Training and Acknowledgment", sections.training_acknowledgment) }}
+{{ section(5, "Investigation and Consequences", sections.investigation_consequences) }}
+{% endblock %}

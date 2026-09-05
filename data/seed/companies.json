@@ -1,0 +1,42 @@
+[
+  {
+    "company_id": "novatech-solutions",
+    "name": "NovaTech Solutions",
+    "industry": "technology",
+    "region": "US",
+    "size": "mid-size",
+    "employee_count": 520
+  },
+  {
+    "company_id": "greenleaf-healthcare",
+    "name": "GreenLeaf Healthcare",
+    "industry": "healthcare",
+    "region": "US",
+    "size": "enterprise",
+    "employee_count": 4200
+  },
+  {
+    "company_id": "urban-retail-group",
+    "name": "Urban Retail Group",
+    "industry": "retail",
+    "region": "UK",
+    "size": "mid-size",
+    "employee_count": 1800
+  },
+  {
+    "company_id": "summit-financial",
+    "name": "Summit Financial Partners",
+    "industry": "finance",
+    "region": "US",
+    "size": "enterprise",
+    "employee_count": 6500
+  },
+  {
+    "company_id": "craftworks-manufacturing",
+    "name": "CraftWorks Manufacturing",
+    "industry": "manufacturing",
+    "region": "IN",
+    "size": "small",
+    "employee_count": 240
+  }
+]

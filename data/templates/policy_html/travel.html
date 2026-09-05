@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section %}
+
+{% block content %}
+{{ section(1, "Policy Scope and Approval", sections.scope_approval) }}
+{{ section(2, "Booking and Class of Travel", sections.booking_class) }}
+{{ section(3, "Per Diem and Lodging", sections.per_diem_lodging) }}
+{{ section(4, "Ground Transportation and Meals", sections.ground_transport_meals) }}
+{{ section(5, "Expense Reporting After Travel", sections.expense_reporting) }}
+{% endblock %}

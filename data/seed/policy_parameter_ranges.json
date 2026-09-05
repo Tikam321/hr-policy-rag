@@ -1,0 +1,317 @@
+{
+  "description": "Allowed parameter keys and value ranges for synthetic policy generation. Generation scripts sample or assign values within these bounds per company.",
+  "policy_types": {
+    "leave_policy": {
+      "title": "Leave & Time Off Policy",
+      "required_parameters": [
+        "annual_leave_days",
+        "probation_months",
+        "carry_forward_limit",
+        "sick_leave_days"
+      ],
+      "parameters": {
+        "annual_leave_days": {
+          "type": "integer",
+          "min": 12,
+          "max": 30,
+          "description": "Paid annual leave days for full-time employees."
+        },
+        "probation_months": {
+          "type": "integer",
+          "min": 1,
+          "max": 6,
+          "description": "Months before full leave entitlement applies."
+        },
+        "carry_forward_limit": {
+          "type": "integer",
+          "min": 0,
+          "max": 10,
+          "description": "Maximum unused leave days carried to the next year."
+        },
+        "sick_leave_days": {
+          "type": "integer",
+          "min": 5,
+          "max": 15,
+          "description": "Paid sick leave days per year."
+        }
+      }
+    },
+    "remote_work": {
+      "title": "Remote Work Policy",
+      "required_parameters": [
+        "remote_days_per_week",
+        "core_hours_start",
+        "core_hours_end",
+        "equipment_allowance_usd"
+      ],
+      "parameters": {
+        "remote_days_per_week": {
+          "type": "integer",
+          "min": 0,
+          "max": 5,
+          "description": "Maximum work-from-home days allowed per week."
+        },
+        "core_hours_start": {
+          "type": "string",
+          "enum": ["09:00", "09:30", "10:00"],
+          "description": "Start of daily core collaboration hours (local time)."
+        },
+        "core_hours_end": {
+          "type": "string",
+          "enum": ["16:00", "16:30", "17:00", "17:30"],
+          "description": "End of daily core collaboration hours (local time)."
+        },
+        "equipment_allowance_usd": {
+          "type": "integer",
+          "min": 0,
+          "max": 1500,
+          "description": "One-time or annual home office equipment stipend in USD."
+        }
+      }
+    },
+    "code_of_conduct": {
+      "title": "Code of Conduct",
+      "required_parameters": [
+        "reporting_window_days",
+        "training_frequency_months",
+        "whistleblower_hotline"
+      ],
+      "parameters": {
+        "reporting_window_days": {
+          "type": "integer",
+          "min": 7,
+          "max": 90,
+          "description": "Days allowed to report an incident after it occurs."
+        },
+        "training_frequency_months": {
+          "type": "integer",
+          "min": 6,
+          "max": 24,
+          "description": "Months between mandatory conduct training sessions."
+        },
+        "whistleblower_hotline": {
+          "type": "boolean",
+          "description": "Whether a confidential whistleblower hotline is available."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Benefits & Insurance Policy",
+      "required_parameters": [
+        "health_insurance_coverage_pct",
+        "dental_coverage_pct",
+        "retirement_match_pct",
+        "waiting_period_days"
+      ],
+      "parameters": {
+        "health_insurance_coverage_pct": {
+          "type": "integer",
+          "min": 50,
+          "max": 100,
+          "description": "Employer share of employee health insurance premium."
+        },
+        "dental_coverage_pct": {
+          "type": "integer",
+          "min": 0,
+          "max": 100,
+          "description": "Employer share of dental insurance premium."
+        },
+        "retirement_match_pct": {
+          "type": "integer",
+          "min": 0,
+          "max": 6,
+          "description": "401(k) or pension match percentage of salary."
+        },
+        "waiting_period_days": {
+          "type": "integer",
+          "min": 0,
+          "max": 90,
+          "description": "Days after start date before benefits enrollment."
+        }
+      }
+    },
+    "expense": {
+      "title": "Expense Reimbursement Policy",
+      "required_parameters": [
+        "expense_reimbursement_days",
+        "max_single_expense_usd",
+        "receipt_required_above_usd"
+      ],
+      "parameters": {
+        "expense_reimbursement_days": {
+          "type": "integer",
+          "min": 7,
+          "max": 45,
+          "description": "Business days to reimburse approved expenses."
+        },
+        "max_single_expense_usd": {
+          "type": "integer",
+          "min": 100,
+          "max": 10000,
+          "description": "Maximum single expense claim without pre-approval."
+        },
+        "receipt_required_above_usd": {
+          "type": "integer",
+          "min": 10,
+          "max": 75,
+          "description": "Minimum expense amount requiring a receipt."
+        }
+      }
+    },
+    "performance": {
+      "title": "Performance Review Policy",
+      "required_parameters": [
+        "probation_months",
+        "review_cycle_months",
+        "rating_scale_max",
+        "pip_duration_days"
+      ],
+      "parameters": {
+        "probation_months": {
+          "type": "integer",
+          "min": 1,
+          "max": 6,
+          "description": "Initial probation period before first formal review."
+        },
+        "review_cycle_months": {
+          "type": "integer",
+          "min": 3,
+          "max": 12,
+          "description": "Months between formal performance reviews."
+        },
+        "rating_scale_max": {
+          "type": "integer",
+          "min": 3,
+          "max": 5,
+          "description": "Top numeric rating on the performance scale."
+        },
+        "pip_duration_days": {
+          "type": "integer",
+          "min": 30,
+          "max": 90,
+          "description": "Standard performance improvement plan duration in days."
+        }
+      }
+    },
+    "onboarding": {
+      "title": "Onboarding Policy",
+      "required_parameters": [
+        "onboarding_duration_days",
+        "buddy_program_weeks",
+        "it_provisioning_days"
+      ],
+      "parameters": {
+        "onboarding_duration_days": {
+          "type": "integer",
+          "min": 5,
+          "max": 30,
+          "description": "Structured onboarding program length in business days."
+        },
+        "buddy_program_weeks": {
+          "type": "integer",
+          "min": 2,
+          "max": 12,
+          "description": "Weeks a new hire is paired with an onboarding buddy."
+        },
+        "it_provisioning_days": {
+          "type": "integer",
+          "min": 1,
+          "max": 10,
+          "description": "Target days to provision laptop and system access."
+        }
+      }
+    },
+    "termination": {
+      "title": "Termination & Exit Policy",
+      "required_parameters": [
+        "notice_period_days",
+        "severance_weeks_per_year",
+        "exit_interview_required"
+      ],
+      "parameters": {
+        "notice_period_days": {
+          "type": "integer",
+          "min": 0,
+          "max": 90,
+          "description": "Required notice period for voluntary resignation."
+        },
+        "severance_weeks_per_year": {
+          "type": "integer",
+          "min": 0,
+          "max": 4,
+          "description": "Severance weeks granted per year of service."
+        },
+        "exit_interview_required": {
+          "type": "boolean",
+          "description": "Whether an exit interview is mandatory for departing employees."
+        }
+      }
+    },
+    "data_security": {
+      "title": "Data Security & IT Policy",
+      "required_parameters": [
+        "password_min_length",
+        "mfa_required",
+        "device_encryption_required",
+        "phishing_training_frequency_months"
+      ],
+      "parameters": {
+        "password_min_length": {
+          "type": "integer",
+          "min": 8,
+          "max": 16,
+          "description": "Minimum password length for corporate accounts."
+        },
+        "mfa_required": {
+          "type": "boolean",
+          "description": "Whether multi-factor authentication is mandatory."
+        },
+        "device_encryption_required": {
+          "type": "boolean",
+          "description": "Whether full-disk encryption is required on company devices."
+        },
+        "phishing_training_frequency_months": {
+          "type": "integer",
+          "min": 3,
+          "max": 12,
+          "description": "Months between mandatory security awareness trainings."
+        }
+      }
+    },
+    "travel": {
+      "title": "Travel Policy",
+      "required_parameters": [
+        "per_diem_usd",
+        "max_hotel_rate_usd",
+        "advance_booking_days",
+        "economy_class_max_hours"
+      ],
+      "parameters": {
+        "per_diem_usd": {
+          "type": "integer",
+          "min": 25,
+          "max": 100,
+          "description": "Daily meal and incidental allowance for domestic travel."
+        },
+        "max_hotel_rate_usd": {
+          "type": "integer",
+          "min": 80,
+          "max": 350,
+          "description": "Maximum nightly hotel rate without manager approval."
+        },
+        "advance_booking_days": {
+          "type": "integer",
+          "min": 7,
+          "max": 21,
+          "description": "Minimum days before travel to book flights for standard fares."
+        },
+        "economy_class_max_hours": {
+          "type": "integer",
+          "min": 4,
+          "max": 8,
+          "description": "Flight duration in hours below which economy class is required."
+        }
+      }
+    }
+  }
+}
